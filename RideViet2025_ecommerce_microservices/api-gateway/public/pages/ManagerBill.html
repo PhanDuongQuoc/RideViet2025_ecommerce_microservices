@@ -1,0 +1,61 @@
+<div class="container mt-5">
+    <h1 class="text-center mb-4" style="color: #2c3e50;">
+        <i class="bi bi-file-earmark-text me-2"></i> Manager Bill
+    </h1>
+    <div class="col-md-6 mb-2 mb-md-0">
+        <button class="btn btn-outline-secondary" onclick="loadPage('ManagerRideViet.html')">
+            <i class="bi bi-arrow-left"></i> Back to list Manager
+        </button>
+    </div>
+    <br>
+    <form id="createOrUpdateBillForm" class="card p-4 shadow-sm mb-5" style="border: 2px solid #2c3e50;" method="POST">
+        <input type="hidden" id="billId" /> <!-- Hidden field to store billId for updates -->
+    
+        <div class="row g-3">
+            <!-- Customer ID -->
+            <div class="col-md-6">
+                <select id="customerId" class="form-control" name="customerId" required>
+                    <option value="">Chọn khách hàng</option>
+                </select>
+            </div>
+            <!-- User ID -->
+            <div class="col-md-6">
+                <select id="userId" class="form-control" name="userId" required>
+                    <option value="">Chọn người tạo</option>
+                </select>
+            </div>
+            <!-- Total Amount -->
+            <div class="col-md-6">
+                <input type="number" id="totalAmount" class="form-control" name="totalAmount" placeholder="Tổng tiền" required />
+            </div>
+            <!-- Payment Method -->
+            <div class="col-md-6">
+                <input type="text" id="paymentMethod" class="form-control" name="paymentMethod" placeholder="Phương thức thanh toán" required />
+            </div>
+        </div>
+        
+        <div class="mt-3 text-end">
+            <button type="submit" class="btn text-white" style="background-color: #2c3e50;">
+                <i class="bi bi-save"></i> Save Bill
+            </button>
+        </div>
+    </form>
+    <h2 class="text-center mt-4">Bill List</h2>
+    <div class="table-responsive mt-3">
+        <table class="table table-bordered shadow-sm">
+            <thead style="background-color: #2c3e50; color: white;">
+                <tr>
+                    <th>Khách hàng</th>
+                    <th>Người tạo</th>
+                    <th>Tổng tiền</th>
+                    <th>Phương thức thanh toán</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody id="billsTableBody"></tbody>
+        </table>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+

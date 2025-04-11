@@ -1,0 +1,83 @@
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- header section start -->
+ <div class="header_section header_bg">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-lg">
+        <div class="container">
+            <!-- Logo -->
+            <a onclick="loadPage('index.html')" class="navbar-brand d-flex align-items-center">
+                <div class="logo-container">
+                    <img src="https://aodapxethietke.com/wp-content/uploads/2024/11/Mau-logo-doi-cau-lac-bo-dua-xe-dap-dep-29-400x400.png" 
+                         alt="Logo" class="logo">
+                </div>
+                <span class="brand-name">
+                    rideviet <span class="highlight">.com</span>
+                </span>
+            </a>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" onclick="loadPage('index.html')">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" onclick="loadPage('shop.html')">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cycle.html">Our Cycle</a></li>
+                    <li class="nav-item"><a class="nav-link" onclick="loadPage('new.html')">News</a></li>
+                    <li class="nav-item"><a class="nav-link" onclick="loadPage('video.html')">Video</a></li>
+                    <li class="nav-item"><a class="nav-link" onclick="loadPage('contact.html')">Contact</a></li>
+                </ul>
+    
+                <!-- Login & Cart Icons -->
+                <ul class="navbar-nav">
+                    <li class="nav-item" id="user-info">
+                        <a class="nav-link" onclick="loadPage('login.html')">Login</a>
+                      </li>
+                      <li class="nav-item" id="register-link">
+                        <a class="nav-link" onclick="loadPage('login.html')">Register</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link position-relative" onclick="loadPage('cart.html')">
+                            <img src="images/trolly-icon.png" alt="Cart" height="24">
+                            <span class="cart-badge">0</span> <!-- Đây là nơi số lượng sẽ hiển thị -->
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="modal"  onclick="loadPage('search.html')" data-bs-target="#searchModal">
+                          <img src="images/search-icon.png" alt="Search" height="24">
+                        </a>
+                      </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+    <!-- banner section start -->
+    <div class="banner_section layout_padding">
+        <div id="main_slider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active"  >
+                    <div id="slide-container" class="container">
+
+                    </div>
+                </div>
+                
+            </div>
+    
+            <!-- Nút điều hướng -->
+            <a class="carousel-control-prev" href="#main_slider" role="button" data-bs-slide="prev">
+                <i class="fa fa-angle-left"></i>
+            </a>
+            <a class="carousel-control-next" href="#main_slider" role="button" data-bs-slide="next">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </div>
+    </div>
+     <!-- banner section end -->
+ </div>
+
+
